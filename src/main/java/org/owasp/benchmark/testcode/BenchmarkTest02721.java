@@ -90,7 +90,7 @@ public class BenchmarkTest02721 extends HttpServlet {
                                         + " has been remembered with cookie: "
                                         + rememberMe.getName()
                                         + " whose value is: "
-                                        + rememberMe.getValue()
+                                        + org.springframework.web.util.HtmlUtils.htmlEscape(rememberMe.getValue())
                                         + "<br/>");
             }
         } catch (java.security.NoSuchAlgorithmException e) {
